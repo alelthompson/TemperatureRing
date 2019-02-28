@@ -3,10 +3,18 @@
 #include <ESP8266HTTPClient.h>
 #include <ArduinoJson.h>
 
-// Note:
-// Make sure to install ESP8266, ArduinoJson, and NeoPixel libraries from Sketch > Include Library > Manage Libraries...
-// Also add the following URLs to the Board Manager in Arduino > Prefences > Additional Board URLs
-// https://adafruit.github.io/arduino-board-index/package_adafruit_index.json,http://arduino.esp8266.com/versions/2.5.0/package_esp8266com_index.json, http://arduino.esp8266.com/stable/package_esp8266com_index.json
+// Notes:
+  // Make sure to install Adafruit ESP8266, ArduinoJson, and Adafruit NeoPixel libraries from Sketch > Include Library > Manage Libraries...
+  // Arduino JSON Library MUST BE rollback version 5.12.0
+  // Also add the following URLs to the Board Manager in Arduino > Prefences > Additional Board URLs
+  // https://adafruit.github.io/arduino-board-index/package_adafruit_index.json,http://arduino.esp8266.com/versions/2.5.0/package_esp8266com_index.json, http://arduino.esp8266.com/stable/package_esp8266com_index.json
+
+// Tutorials used in final solution:
+  // Making HTTP Requests to Open Weather Maps
+    //https://techtutorialsx.com/2018/03/17/esp32-arduino-getting-weather-data-from-api/
+  // Parsing JSON data from HTTP Requests
+    //https://www.instructables.com/id/ESP8266-Parsing-JSON/
+
 
 // Enter current WiFi credentials 
   // The name of your network
